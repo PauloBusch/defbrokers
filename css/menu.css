@@ -1,0 +1,56 @@
+header {
+  padding: 10px 50px;
+}
+
+#logo {
+  max-height: 60px;
+}
+
+#menu ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  align-items: center;
+} 
+
+#menu ul li a,
+#menu ul li a i {
+  color: black;
+  padding: 15px;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  line-height: 18px;
+}
+
+#menu ul li a:hover {
+  color: blue;
+}
+
+#menu ul li a:hover > i {
+  color: blue;
+}
+
+#menu ul li a:hover ~ .dropdown {
+  transform: scaleY(1);
+}
+
+.dropdown {
+  padding-top: 10px;
+  padding-right: 20px;
+  transition: all .2s;
+  opacity: .8;
+  background-color: white;
+  position: absolute;
+  transform-origin: top;
+  transform: scaleY(0);
+  display: block !important;
+}
+
+.dropdown li a {
+  padding: 15px 10px;
+}
+
+.dropdown:hover {
+  transform: scaleY(1);
+}
