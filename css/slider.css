@@ -111,6 +111,14 @@
   left: 0;
 }
 
+.actions .disabled {
+  cursor: default;
+}
+
+.actions .disabled:hover {
+  color: rgba(126, 126, 126, 0.603);
+}
+
 @media only screen and (max-width: 1200px) { 
   .slide img {
     width: 100vw;

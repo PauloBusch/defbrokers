@@ -20,6 +20,7 @@
   <link rel="stylesheet" type="text/css" href="css/reset.css"/>
   <link rel="stylesheet" type="text/css" href="css/menu.css">
   <link rel="stylesheet" type="text/css" href="css/slider.css">
+  <link rel="stylesheet" type="text/css" href="css/content.css">
   <link rel="stylesheet" type="text/css" href="css/footer.css">
 </head>
 <body>
@@ -47,7 +48,7 @@
         <li><a href="#">Onde Estamos</a></li>
         <li><a href="https://wa.me/5562981952633" target="_blank">
           <i class="fab fa-whatsapp"></i>
-          (62) 98495-2633
+          {{ phone }}
         </a></li>
       </ul>
     </nav>
@@ -57,14 +58,58 @@
     <ul class="slides"></ul>
     <ol class="indicators" direction="next"></ol>
     <div class="actions">
-      <i onclick="prevSlide(true)" class="fas fa-chevron-left prev"></i>
+      <i onclick="prevSlide(true)" class="fas fa-chevron-left prev disabled"></i>
       <i onclick="nextSlide(true)" class="fas fa-chevron-right next"></i>
     </div>
   </div>
 
-  <div class="content">
-    Conteúdo
-  </div>
+  <main class="content">
+    <section id="sessao-pesquisa push-sessoes">
+      <form id="form-search">
+        <h3>Encontre seu imóvel</h3>
+        <div class="row">
+          <div class="form-group">
+            <select name="type" aria-placeholder="Tipo">
+              <option value="1">Aluguel</option>
+              <option value="2">Venda</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group">
+            <input name="startValue" placeholder="Valor inicial"/>
+          </div>
+          <div class="form-group">
+            <input name="startValue" placeholder="Valor inicial"/>
+          </div>
+        </div>
+        <button type="submit">PESQUISAR</button>
+      </form>
+    </section>
+    <section id="sessao-quem-somos">
+      <div>
+        <img src="assets/images/def.jpg"/>
+      </div>
+      <div>
+        <h3>Quem Somos</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+          when an unknown printer took a galley of type and scrambled it to make a type 
+          specimen book. It has survived not only five centuries, but also the leap into
+           electronic typesetting, remaining essentially unchanged.</p>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+          when an unknown printer took a galley of type and scrambled it to make a type 
+          specimen book. It has survived not only five centuries, but also the leap into
+          electronic typesetting, remaining essentially unchanged.</p>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+          when an unknown printer took a galley of type and scrambled it to make a type 
+          specimen book. It has survived not only five centuries, but also the leap into
+          electronic typesetting, remaining essentially unchanged.</p>
+      </div>
+    </section>
+  </main>
 
   <footer>
     <ul>
@@ -72,11 +117,11 @@
         <img id="logo" alt="logo" src="assets/images/logo.png">
         <p>Seja qual for o seu propósito, nós queremos te ajudar a cumpri-lo.</p>
       </li>
-      <li>
+      <li class="contact">
         <h3>FALE CONOSCO</h3>
         <br/>
-        <a href="https://wa.me/5562992537258"><i class="fab fa-whatsapp"></i> (62) 99253-7258</a>
-        <a href="mailto:contato@defbrokers.com.br"><i class="far fa-envelope"></i> contato@defbrokers.com.br</a>
+        <a href="https://wa.me/5562992537258"><i class="fab fa-whatsapp"></i> {{ phone }}</a>
+        <a href="mailto:contato@defbrokers.com.br"><i class="far fa-envelope"></i> {{ email }}</a>
       </li>
       <li>
         <h3>ONDE ESTAMOS</h3>
@@ -91,7 +136,7 @@
         <a href="#">Anuncie seu Imóvel</a>
       </li>
     </ul>
-    <span class="copyright"><i class="far fa-copyright"></i> D&F Brokers 2021 - Todos os direitos reservados</span>
+    <span class="copyright"><i class="far fa-copyright"></i> D&F Brokers {{ year }} - Todos os direitos reservados</span>
   </footer>
 
   <!-- Scripts -->
@@ -100,5 +145,6 @@
   <script type="text/javascript" src="js/menu.js"></script>
   <script type="text/javascript" src="js/slider.js"></script>
   <script type="text/javascript" src="js/transitions.js"></script>
+  <script type="text/javascript" src="js/footer.js"></script>
 </body>
 </html>

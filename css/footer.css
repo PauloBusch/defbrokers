@@ -9,7 +9,7 @@ footer ul {
 
 footer ul li {
   flex-basis: 20%;
-  padding: 25px;
+  padding: 2% 5%;
 }
 
 footer p {
@@ -39,7 +39,7 @@ footer a:hover {
 
 footer span {
   display: block;
-  padding: 25px 15px;
+  padding: 25px 0 25px 5%;
 }
 
 @media only screen and (max-width: 1000px) {

@@ -1,4 +1,5 @@
 $(function() {
+  const slides = site.slides.lista;
   initSlides(slides);
   initIndicators(slides);
   configureAnimation();
@@ -47,7 +48,7 @@ var animationId;
 
 function configureAnimation() {
   if (animationId) clearInterval(animationId);
-  animationId = setInterval(updateAnimation, duracaoSlide);
+  animationId = setInterval(updateAnimation, site.slides.duracao);
 }
 
 function updateAnimation() {
@@ -101,6 +102,7 @@ function updateSlide() {
   
   updateIndicator();
   updateDirection();
+  updateButtons();
 }
 
 function updateIndicator() {
@@ -113,10 +115,17 @@ function updateIndicator() {
 }
 
 function updateDirection() {
-  const $slides = $('.slide');
-  const $currentSlide = $slides.filter('.active');
+  const $currentSlide = $('.slide.active');
   const isFirst = $currentSlide.is(':first-child');
   const isLast = $currentSlide.is(':last-child');
   if (isLast) $('.indicators').attr('direction', 'prev');
   if (isFirst) $('.indicators').attr('direction', 'next');
+}
+
+function updateButtons() {
+  const $currentSlide = $('.slide.active');
+  const isFirst = $currentSlide.is(':first-child');
+  const isLast = $currentSlide.is(':last-child');
+  $('.actions .prev').toggleClass('disabled', isFirst);
+  $('.actions .next').toggleClass('disabled', isLast);
 }
