@@ -21,6 +21,39 @@
   background-size: cover;
 }
 
+.slider-caption {
+  width: 100vw;
+  position: absolute;
+  color: white;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.slider-caption > * {
+  line-height: 30px;
+}
+
+.slider-caption hr {
+  border: none;
+  background-color: white;
+  height: 2px;
+  width: 15%;
+}
+
+.slider-caption h2 {
+  font-size: 30px;
+}
+
+.slider-caption h4 {
+  font-size: 25px;
+}
+
+.slider-caption h5 {
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
 .indicators {
   position: absolute;
   bottom: 15px;
