@@ -17,6 +17,7 @@
   <link rel="stylesheet" type="text/css" href="css/general.css"/>
   <link rel="stylesheet" type="text/css" href="css/reset.css"/>
   <link rel="stylesheet" type="text/css" href="css/menu.css">
+  <link rel="stylesheet" type="text/css" href="css/slider.css">
 </head>
 <body>
 
@@ -45,11 +46,15 @@
 
   <div class="slider">
     <ul class="slides"></ul>
-    <ol class="indicators"></ol>
+    <ol class="indicators" direction="next"></ol>
     <div class="actions">
-      <i class="fas fa-chevron-left back"></i>
-      <i class="fas fa-chevron-right next"></i>
+      <i onclick="prevSlide(true)" class="fas fa-chevron-left prev"></i>
+      <i onclick="nextSlide(true)" class="fas fa-chevron-right next"></i>
     </div>
+  </div>
+
+  <div class="content">
+    <h2>Text</h2>
   </div>
 
   <!-- Scripts -->

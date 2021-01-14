@@ -1,5 +1,7 @@
 header {
+  box-sizing: border-box;
   padding: 10px 50px;
+  height: var(--menu-heigth);
 }
 
 #logo {
@@ -36,6 +38,7 @@ header {
 }
 
 .dropdown {
+  z-index: 1;
   padding-top: 10px;
   padding-right: 20px;
   transition: all .2s;

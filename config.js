@@ -1,3 +1,4 @@
+var duracaoSlide = 8000;
 var slides = [
   {
     titulo: 'LANÇAMENTO',
