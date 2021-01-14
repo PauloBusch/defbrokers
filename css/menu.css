@@ -50,11 +50,11 @@ header {
 }
 
 #menu ul li a:hover {
-  color: blue;
+  color: var(--blue);
 }
 
 #menu ul li a:hover > i {
-  color: blue;
+  color: var(--blue);
 }
 
 #menu ul li a:hover ~ .dropdown {
@@ -94,7 +94,7 @@ header {
 
 @media only screen and (max-width: 1000px) {
   header {
-    border-bottom: 2px solid blue;
+    border-bottom: 2px solid var(--blue);
   }
 
   #menu {
@@ -134,7 +134,7 @@ header {
   #menu>ul li {
     width: 100%;
     background-color: white;
-    border-bottom: 1px solid blue;
+    border-bottom: 1px solid var(--blue);
   }
 
   #menu>ul li a {
@@ -160,7 +160,7 @@ header {
     position: static;
     transition: none !important;
     transform: scaleY(0);
-    border-top: 1px solid blue;
+    border-top: 1px solid var(--blue);
   }
 
   .dropdown li {

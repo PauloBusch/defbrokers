@@ -1,0 +1,57 @@
+footer {
+  border-top: 2px solid var(--blue);
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer ul li {
+  flex-basis: 20%;
+  padding: 25px;
+}
+
+footer p {
+  padding: 15px 0;
+}
+
+footer .copyright {
+  border-top: 1px solid rgba(0, 0, 0, 0.151);
+}
+
+footer h3 {
+  text-transform: capitalize;
+  font-weight: bold;
+  color: var(--blue);
+}
+
+footer a {
+  color: var(--blue);
+  padding: 3px 0;
+  display: block;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer span {
+  display: block;
+  padding: 25px 15px;
+}
+
+@media only screen and (max-width: 1000px) {
+  footer ul {
+    flex-direction: column;
+  }
+
+  footer ul li {
+    border-top: 1px solid rgba(0, 0, 0, 0.151);
+  }
+
+  footer ul li:first-child {
+    border-top: none;
+  }
+}
