@@ -1,5 +1,5 @@
 :root {
-  --menu-heigth: 90px;
+  --menu-heigth: 80px;
 }
 
 html, body {
@@ -10,4 +10,8 @@ html, body {
 
 html, body, i {
   font-size: 18px;
+}
+
+body.stop-transitions * {
+  transition: none !important;
 }

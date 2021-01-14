@@ -46,15 +46,14 @@ function renderIndicator(active) {
 var animationId;
 
 function configureAnimation() {
-  clearTimeout(animationId);
-  animationId = setTimeout(recursiveAnimation, duracaoSlide);
+  if (animationId) clearInterval(animationId);
+  animationId = setInterval(updateAnimation, duracaoSlide);
 }
 
-function recursiveAnimation() {
+function updateAnimation() {
   const direction = $('.indicators').attr('direction') || 'next';
   if (direction === 'next') nextSlide();
   if (direction === 'prev') prevSlide();
-  animationId = setTimeout(recursiveAnimation, duracaoSlide);
 }
 
 function prevSlide(manual) {
@@ -90,6 +89,7 @@ function goSlide(indicator) {
   $indicator.addClass('active');
   $slide.addClass('active');
 
+  configureAnimation();
   updateSlide();
 }
 

@@ -10,12 +10,14 @@
   transition-timing-function: ease-out;
 }
 
-.slides img {
-  width: 100%;
-  display: inline-block;
+.slide {
+  width: calc(100vw);
+  overflow: hidden;
+}
+
+.slide img {
   height: calc(100vh - var(--menu-heigth));
-  background-position: center;
-  background-repeat: no-repeat;
+  background-position: top center;
   background-size: cover;
 }
 
@@ -50,6 +52,7 @@
 
 .actions > * {
   z-index: 1;
+  padding: 15px;
   position: absolute;
   font-size: 50px;
   color: rgba(126, 126, 126, 0.603);
