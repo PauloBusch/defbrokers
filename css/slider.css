@@ -11,6 +11,7 @@
 }
 
 .slide {
+  position: relative;
   width: calc(100vw);
   overflow: hidden;
 }
@@ -62,6 +63,7 @@
 }
 
 .indicator {
+  margin: 0 3px;
   display: inline-block;
   background-color: white;
   opacity: .5;
@@ -88,9 +90,9 @@
   padding: 15px;
   position: absolute;
   font-size: 50px;
+  transform: translateY(-50%);
   color: rgba(126, 126, 126, 0.603);
   cursor: pointer;
-  transform: translate(-50%, -50%);
   outline: none;
   transition: all .2s;
 }
@@ -107,4 +109,48 @@
 .actions .prev {
   margin-left: 130px;
   left: 0;
+}
+
+@media only screen and (max-width: 1200px) { 
+  .slide img {
+    width: 100vw;
+    height: auto;
+    background-position: top center;
+    background-size: cover;
+  }
+}
+
+@media only screen and (max-width: 1000px) { 
+  .slider-caption hr {
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width: 700px) { 
+  .slider-caption > * {
+    line-height: 20px;
+  }
+  
+  .slider-caption h2 {
+    font-size: 18px;
+  }
+  
+  .slider-caption h4 {
+    font-size: 15px;
+  }
+  
+  .slider-caption h5 {
+    font-size: 10px;
+    text-transform: capitalize;
+  }
+
+  .actions .next { 
+    margin-right: 30px;
+    right: 0;  
+  }
+  
+  .actions .prev {
+    margin-left: 30px;
+    left: 0;
+  }
 }
