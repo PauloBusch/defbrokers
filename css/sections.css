@@ -100,6 +100,14 @@ strong {
   .custom-section .caracteristics {
     flex-direction: row;
   }
+  
+  .custom-section .property .img {
+    height: 200px;
+  }
+
+  .custom-section .detail {
+    padding: 10px;
+  }
 }
 
 @media only screen and (max-width: 700px) {

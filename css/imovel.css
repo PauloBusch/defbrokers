@@ -1,0 +1,180 @@
+.baner {
+  position: relative;
+}
+
+.baner .img {
+  height: 300px;
+  background-size: cover;
+  background-position: center center;
+}
+
+.baner-caption {
+  width: 100%;
+  position: absolute;
+  color: white;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.baner-caption > * {
+  line-height: 30px;
+}
+
+.baner-caption hr {
+  border: none;
+  background-color: white;
+  height: 2px;
+  width: 12%;
+}
+
+.baner-caption h2 {
+  font-size: 30px;
+}
+
+.baner-caption h4 {
+  font-size: 25px;
+}
+
+.baner-caption h5 {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.property-content .row {
+  display: flex;
+  padding: 0 5%;
+}
+
+.property-detail {
+  margin: 15px 0;
+  padding-right: 15px;
+  flex-basis: 70%;
+}
+
+.property-asside {
+  margin: 15px 0;
+  flex-basis: 30%;
+  padding: 15px;
+  background-color: var(--grey);
+}
+
+.property-asside button {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 15px;
+  border: none;
+  transition: all .2;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  background-color: var(--blue-dark);
+}
+
+.property-asside button:hover {
+  background-color:#1666dd;
+}
+
+.property-asside h3,
+.property-detail h3 {
+  font-size: 18px;
+}
+
+.property-asside h4,
+.property-asside h2 {
+  display: inline-block;
+}
+
+.property-asside h2 {
+  color: black;
+  font-size: 25px;
+  margin: 15px 0;
+}
+
+.property-detail h3 {
+  margin: 20px 0 10px 0;
+}
+
+.differentials {
+  list-style: outside;
+  margin-left: 25px;
+}
+
+.differentials li,
+.property-detail p {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.property-menu {
+  height: 40px;
+  line-height: 40px;
+  background-color: var(--blue-dark);
+  font-weight: 500;
+  padding: 0 5%;
+  color: white;
+}
+
+.property-menu span {
+  padding-right: 5%;
+}
+
+.property-header {
+  display: flex;
+  background-color: var(--grey);
+  padding: 10px;
+}
+
+.property-header span {
+  padding: 0 40px 0 5px;
+}
+
+.property-header div {
+  display: flex;
+  align-items: center;
+}
+
+.property-header i {
+  color: var(--blue-dark);
+  font-size: 25px;
+}
+
+.galery {
+  display: flex;
+  justify-content: space-between;
+}
+
+.galery li {
+  margin-right: 2%;
+}
+
+.galery li:last-child {
+  margin-right: 0;
+}
+
+.galery img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 1000px) {
+  .property-content .row {
+    flex-direction: column;
+  }
+
+  .property-detail {
+    padding-right: 0;
+  }
+
+  .property-menu {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .property-menu span {
+    padding-right: 0;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+}

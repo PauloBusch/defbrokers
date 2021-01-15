@@ -26,13 +26,14 @@ var site = {
       titulo: 'Casas e Condomínios Fechados',
       cards: [
         { 
+          id: '321456df',
           tipoImovel: 'Casa',
           nome: 'Chateau Provence',
           estadoUf: 'GO',
           cidade: 'Senador Canedo',
           tipo: 'Venda',
           preco: 1699000.01,
-          imagem: 'product.png',
+          imagem: 'imovel1.webp',
           caracteristicas: {
             quartos: 4,
             banheiros: 6,
@@ -41,13 +42,14 @@ var site = {
           }
         },
         { 
+          id: 'dfasdfre',
           tipoImovel: 'Casa',
           nome: 'Chateau Provence',
           estadoUf: 'GO',
           cidade: 'Senador Canedo',
           tipo: 'Aluguel',
           preco: 5000.0,
-          imagem: 'product.png',
+          imagem: 'imovel1.webp',
           caracteristicas: {
             quartos: 4,
             banheiros: 6,
@@ -56,6 +58,7 @@ var site = {
           }
         },
         { 
+          id: 'asdfghjk',
           tipoImovel: 'Casa',
           nome: 'Chateau Provence',
           estadoUf: 'GO',
@@ -71,6 +74,7 @@ var site = {
           }
         },
         { 
+          id: 'çlkjasdf',
           tipoImovel: 'Casa',
           nome: 'Chateau Provence',
           estadoUf: 'GO',
@@ -90,13 +94,14 @@ var site = {
       titulo: 'Apartamentos',
       cards: [
         { 
+          id: 'poiuqwer',
           tipoImovel: 'Casa',
           nome: 'Chateau Provence',
           estadoUf: 'GO',
           cidade: 'Senador Canedo',
           tipo: 'Venda',
           preco: 1699000.0,
-          imagem: 'product.png',
+          imagem: 'imovel1.webp',
           caracteristicas: {
             quartos: 4,
             banheiros: 6,
@@ -105,6 +110,7 @@ var site = {
           }
         },
         { 
+          id: 'zxcv54mn',
           tipoImovel: 'Casa',
           nome: 'Chateau Provence',
           estadoUf: 'GO',
@@ -120,6 +126,7 @@ var site = {
           }
         },
         { 
+          id: 'ooiusdfsd',
           tipoImovel: 'Casa',
           nome: 'Chateau Provence',
           estadoUf: 'GO',
@@ -135,13 +142,14 @@ var site = {
           }
         },
         { 
+          id: 'asdfpoiuy',
           tipoImovel: 'Casa',
           nome: 'Chateau Provence',
           estadoUf: 'GO',
           cidade: 'Senador Canedo',
           tipo: 'Venda',
           preco: 1699000.0,
-          imagem: 'product.png',
+          imagem: 'imovel1.webp',
           caracteristicas: {
             quartos: 4,
             banheiros: 6,
@@ -154,6 +162,7 @@ var site = {
       titulo: 'Loteamentos e Fazendas',
       cards: [
         { 
+          id: 'adfiuyrt',
           tipoImovel: 'Casa',
           nome: 'Chateau Provence',
           estadoUf: 'GO',
@@ -169,13 +178,14 @@ var site = {
           }
         },
         { 
+          id: 'weirufdf',
           tipoImovel: 'Casa',
           nome: 'Chateau Provence',
           estadoUf: 'GO',
           cidade: 'Senador Canedo',
           tipo: 'Aluguel',
           preco: 2000.0,
-          imagem: 'product.png',
+          imagem: 'imovel1.webp',
           caracteristicas: {
             quartos: 4,
             banheiros: 6,
@@ -184,6 +194,7 @@ var site = {
           }
         },
         { 
+          id: 'jhcvdnmfdf',
           tipoImovel: 'Casa',
           nome: 'Chateau Provence',
           estadoUf: 'GO',
@@ -199,13 +210,14 @@ var site = {
           }
         },
         { 
+          id: 'vbmndfky',
           tipoImovel: 'Casa',
           nome: 'Chateau Provence',
           estadoUf: 'GO',
           cidade: 'Senador Canedo',
           tipo: 'Aluguel',
           preco: 1000.0,
-          imagem: 'product.png',
+          imagem: 'imovel1.webp',
           caracteristicas: {
             quartos: 4,
             banheiros: 6,

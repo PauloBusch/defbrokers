@@ -7,6 +7,12 @@ function initSections(sections) {
   const renderedSections = renderSections(sections);
   $('.custom-section').remove();
   $('.push-sessoes').after(renderedSections);
+  $('.property').click(goToProperty);
+}
+
+function goToProperty(ev) {
+  const id = $(ev.currentTarget).data('id');
+  window.location.href = `imovel.html?id=${id}`;
 }
 
 function renderSections(sections) {
@@ -30,7 +36,7 @@ function renderCards(cards) {
 function renderCard(card) {
   const { caracteristicas } = card;
   return `
-    <li class="property">
+    <li class="property" data-id="${card.id}">
       <div class="img" style="background-image: url('assets/images/properties/${card.imagem}');"></div>
       <div class="detail">
         <h3>${card.tipoImovel}</h3>

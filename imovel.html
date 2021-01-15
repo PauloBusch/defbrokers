@@ -19,9 +19,7 @@
   <link rel="stylesheet" type="text/css" href="css/general.css"/>
   <link rel="stylesheet" type="text/css" href="css/reset.css"/>
   <link rel="stylesheet" type="text/css" href="css/menu.css">
-  <link rel="stylesheet" type="text/css" href="css/slider.css">
-  <link rel="stylesheet" type="text/css" href="css/content.css">
-  <link rel="stylesheet" type="text/css" href="css/sections.css">
+  <link rel="stylesheet" type="text/css" href="css/imovel.css">
   <link rel="stylesheet" type="text/css" href="css/footer.css">
 </head>
 <body>
@@ -55,61 +53,11 @@
     </nav>
   </header>
 
-  <div class="slider">
-    <ul class="slides"></ul>
-    <ol class="indicators" direction="next"></ol>
-    <div class="actions">
-      <i onclick="prevSlide(true)" class="fas fa-chevron-left prev disabled"></i>
-      <i onclick="nextSlide(true)" class="fas fa-chevron-right next"></i>
-    </div>
-  </div>
-
   <main class="content">
-    <section id="sessao-pesquisa" class="push-sessoes">
-      <form id="form-search">
-        <h3>Encontre seu imóvel</h3>
-        <div class="row">
-          <div class="form-group">
-            <select name="type" aria-placeholder="Tipo">
-              <option value="aluguel">Aluguel</option>
-              <option value="venda">Venda</option>
-            </select>
-          </div>
-        </div>
-        <div class="row">
-          <div class="form-group">
-            <input type="number" name="startValue" placeholder="Valor inicial"/>
-          </div>
-          <div class="form-group">
-            <input type="number" name="endValue" placeholder="Valor Final"/>
-          </div>
-        </div>
-        <button type="submit">PESQUISAR</button>
-      </form>
-    </section>
-    <section id="sessao-quem-somos">
-      <div>
-        <img src="assets/images/def.jpg"/>
-      </div>
-      <div>
-        <h3>Quem Somos</h3>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-          when an unknown printer took a galley of type and scrambled it to make a type 
-          specimen book. It has survived not only five centuries, but also the leap into
-           electronic typesetting, remaining essentially unchanged.</p>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-          when an unknown printer took a galley of type and scrambled it to make a type 
-          specimen book. It has survived not only five centuries, but also the leap into
-          electronic typesetting, remaining essentially unchanged.</p>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-          when an unknown printer took a galley of type and scrambled it to make a type 
-          specimen book. It has survived not only five centuries, but also the leap into
-          electronic typesetting, remaining essentially unchanged.</p>
-      </div>
-    </section>
+
+    <div class="baner"></div>
+    <div class="property-content"></div>
+
   </main>
 
   <footer>
@@ -146,9 +94,7 @@
   <script type="text/javascript" src="js/utils/query.js"></script>
   <script type="text/javascript" src="config.js"></script>
   <script type="text/javascript" src="js/menu.js"></script>
-  <script type="text/javascript" src="js/slider.js"></script>
-  <script type="text/javascript" src="js/search.js"></script>
-  <script type="text/javascript" src="js/sections.js"></script>
+  <script type="text/javascript" src="js/imovel.js"></script>
   <script type="text/javascript" src="js/transitions.js"></script>
   <script type="text/javascript" src="js/footer.js"></script>
 </body>
