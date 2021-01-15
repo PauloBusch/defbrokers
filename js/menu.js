@@ -13,9 +13,8 @@ function toggleDropdown(ev) {
   $(ev.currentTarget).closest('li').find('.dropdown').toggleClass('show');
 }
 
-
 function updateMenu(contact){
-  const $menu = $('#menu');
+  const $menu = $('#menu .phone');
   const template = $menu.html()
     .replace('{{ phone }}', contact.telefone);
   $menu.html(template);

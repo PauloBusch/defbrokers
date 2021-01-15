@@ -1,0 +1,109 @@
+.custom-section h2 {
+  text-align: center;
+  font-size: 25px;
+}
+
+.custom-section .properties {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 25px;
+  padding: 0 2.5%;
+  justify-content: space-evenly;
+}
+
+.custom-section .property {
+  flex-basis: 20%;
+  background-color: white;
+  min-width: 300px;
+  margin: 15px;
+  cursor: pointer;
+  border: 1px solid rgb(156, 156, 156);
+}
+
+.custom-section .property .img {
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+  background-position: center center;
+}
+
+.custom-section .property .price h2 {
+  color: black;
+}
+
+.custom-section .property .price h4,
+.custom-section .property .price h2 {
+  display: inline-block;
+}
+
+.custom-section .detail {
+  text-align: center;
+  padding: 35px;
+}
+
+.custom-section .caracteristics h5,
+.custom-section .detail h2,
+.custom-section .detail h3,
+.custom-section .detail h4 {
+  margin: 5px 0;
+  color: var(--gray)
+}
+
+.custom-section .detail h2 {
+  font-size: 25px;
+}
+
+.custom-section .detail h3 {
+  font-size: 20px;    
+  letter-spacing: 2px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.custom-section .detail h4 {
+  font-size: 15px;
+}
+
+.custom-section .caracteristics {
+  padding: 20px;
+}
+
+.custom-section .caracteristics {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.custom-section .caracteristics span {
+  display: block;
+}
+
+.custom-section .caracteristics i {
+  display: inline-block;
+  font-weight: bold;
+}
+
+.custom-section .caracteristics h5 {
+  display: inline-block;
+}
+
+strong {
+  font-weight: bold;
+  color: black;
+}
+
+@media only screen and (max-width: 1000px) {
+  .custom-section .properties {
+    flex-direction: column;
+  }
+
+  .custom-section .caracteristics {
+    flex-direction: row;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .custom-section .caracteristics {
+    flex-direction: column;
+  }
+}
