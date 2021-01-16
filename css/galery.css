@@ -1,0 +1,12 @@
+.slider {
+  max-height: calc(40vh - var(--menu-heigth)) !important;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+.slider-caption {
+  display: none;
+}

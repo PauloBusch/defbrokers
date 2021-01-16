@@ -2,6 +2,7 @@ $(function() {
   const card = getCard();
   initBaner(card);
   initDetail(card);
+  initModal();
 });
 
 function getCard() {
@@ -12,6 +13,10 @@ function getCard() {
   }
 }
 
+function initModal() {
+  $('.galery img').click(openGalery);
+}
+
 function initBaner(card) {
   const renderedBanner = renderBaner(card);
   $('.baner').html(renderedBanner);
@@ -20,6 +25,10 @@ function initBaner(card) {
 function initDetail(card) {
   const renderedDetail = renderDetail(card);
   $('.property-content').append(renderedDetail);
+}
+
+function openGalery() {
+  $('#modal-galery').modal('show'); 
 }
 
 function renderBaner(card) {
@@ -70,10 +79,10 @@ function renderDetail(card) {
         </ul>
         <h3>Galeria</h3>
         <ul class="galery">
-          <li><img src="assets/images/properties/product.png"/></li>
-          <li><img src="assets/images/properties/product.png"/></li>
-          <li><img src="assets/images/properties/product.png"/></li>
-          <li><img src="assets/images/properties/product.png"/></li>
+          <li><img src="assets/images/slider/slide1.webp"/></li>
+          <li><img src="assets/images/slider/slide2.webp"/></li>
+          <li><img src="assets/images/slider/slide1.webp"/></li>
+          <li><img src="assets/images/slider/slide2.webp"/></li>
         </ul>
       </div>
       <div class="property-asside">

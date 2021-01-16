@@ -38,3 +38,7 @@ html, body, i {
 body.stop-transitions * {
   transition: none !important;
 }
+
+.hide {
+  display: none;
+}

@@ -1,0 +1,42 @@
+.modal {
+  border-radius: 5px;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-header button {
+  color: var(--gray);
+  font-weight: bold;
+}
+
+.modal-header button:hover {
+  color: black;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-footer button {
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  outline: none;
+  color: white;
+  transition: all .2s;
+  background-color: var(--blue);
+}
+
+.modal-footer button:hover {
+  background-color: #0166d3;
+}
+
+.modal-header,
+.modal-body,
+.modal-footer {
+  padding: 15px;
+}
