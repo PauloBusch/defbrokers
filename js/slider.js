@@ -26,13 +26,7 @@ function renderSlide(slide, active) {
   return `
     <li class="slide ${(active ? 'active' : '')}">
       <img src="assets/images/slider/${slide.imagem}"/>
-      <div class="slider-caption">
-        <h5>${slide.titulo}</h5>
-        <h2>${slide.subtitulo}</h2>
-        <hr>
-        <h4>${slide.setor}</h4>
-        <h4>${slide.descricao}</h4>
-      </div>
+      
     </li>`; 
 }
 

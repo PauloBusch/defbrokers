@@ -1,155 +1,155 @@
-<!DOCTYPE html>
-<html lang="pt">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="HandheldFriendly" content="true">
-  <title>D&F Brokers - Imobiliária</title>
-  <link rel="shortcut icon" type="image/x-icon" href="assets/images/icon.png">
-  
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <!DOCTYPE html>
+  <html lang="pt">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <title>DEF Brokers - Imobiliária</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/icon.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 
-  <!-- Font Icons -->
-  <script src="https://kit.fontawesome.com/77f079a3e3.js" crossorigin="anonymous"></script>
+    <!-- Font Icons -->
+    <script src="https://kit.fontawesome.com/77f079a3e3.js" crossorigin="anonymous"></script>
 
-  <!-- Styles -->
-  <link rel="stylesheet" type="text/css" href="css/general.css"/>
-  <link rel="stylesheet" type="text/css" href="css/reset.css"/>
-  <link rel="stylesheet" type="text/css" href="css/menu.css">
-  <link rel="stylesheet" type="text/css" href="css/slider.css">
-  <link rel="stylesheet" type="text/css" href="css/content.css">
-  <link rel="stylesheet" type="text/css" href="css/sections.css">
-  <link rel="stylesheet" type="text/css" href="css/footer.css">
-</head>
-<body>
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="css/general.css"/>
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="css/menu.css">
+    <link rel="stylesheet" type="text/css" href="css/slider.css">
+    <link rel="stylesheet" type="text/css" href="css/content.css">
+    <link rel="stylesheet" type="text/css" href="css/sections.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+  </head>
+  <body>
 
-  <header>
-    <nav id="menu">
-      <div class="main">
-        <a href="./">
-          <img id="logo" alt="logo" src="assets/images/logo.png">
-        </a>
-        <i id="mobile" class="fas fa-bars toggle-menu"></i>
+    <header>
+      <nav id="menu">
+        <div class="main">
+          <a href="./">
+            <img id="logo" alt="logo" src="assets/images/logo.png">
+          </a>
+          <i id="mobile" class="fas fa-bars toggle-menu"></i>
+        </div>
+        <ul>
+          <li>
+            <a href="#" class="toggle-dropdown">
+              Imóveis
+             <!-- <i class="far fa-angle-down"></i>-->
+            </a>
+            <!--<ul class="dropdown">
+              <li><a href="#">Alugueis</a></li>
+              <li><a href="#">Vendas</a></li>
+            </ul>-->
+          </li>
+          <li><a href="#sessao-quem-somos">A DEF Brokers</a></li>          
+          <li class="phone"><a href="https://wa.me/5562981952633" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+            {{ phone }}
+          </a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="slider">
+      <ul class="slides"></ul>
+      <ol class="indicators" direction="next"></ol>
+      <div class="actions">
+        <i onclick="prevSlide(true)" class="fas fa-chevron-left prev disabled"></i>
+        <i onclick="nextSlide(true)" class="fas fa-chevron-right next"></i>
       </div>
+    </div>
+
+    <main class="content">
+      <section id="sessao-pesquisa" class="push-sessoes">
+        <form id="form-search">
+          <h3>Encontre seu imóvel</h3>
+          <div class="row">
+            <div class="form-group">
+              <select name="type" aria-placeholder="Tipo">
+                <option value="aluguel">Aluguel</option>
+                <option value="venda">Venda</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group">
+              <input type="number" name="startValue" placeholder="Valor inicial"/>
+            </div>
+            <div class="form-group">
+              <input type="number" name="endValue" placeholder="Valor Final"/>
+            </div>
+          </div>
+          <button type="submit">PESQUISAR</button>
+        </form>
+      </section>
+      <section id="sessao-quem-somos">
+        <div>
+          <img src="assets/images/def.jpg"/>
+        </div>      
+        <div>
+          <h3>Quem Somos</h3>
+          <p>A DEF BROKERS IMOBILIÁRIA é uma empresa que vive diariamente a missão de contribuir com a realização do sonho da vida das pessoas, a casa própria.</p>
+          <p>NOSSOS VALORES SÃO:
+          <p>PROPÓSITO:</p>
+          Contribuir com a vida das pessoas que compram imóveis, seja em investimento ou moradia.</p>
+          <p>MISSÃO</p>
+          Transformar a vida das pessoas, proporcionando a melhor experiência para todos os envolvidos
+          <p>VISÃO</p>
+          Ser referência de atuação, por meio de uma gestão eficiente e excelência em atendimento com foco em uma solução personalizada para cada cliente.
+          <p>TEMOS PAIXÃO PELO QUE FAZEMOS.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
       <ul>
         <li>
-          <a href="#" class="toggle-dropdown">
-            Imóveis
-            <i class="far fa-angle-down"></i>
-          </a>
-          <ul class="dropdown">
-            <li><a href="#">Alugueis</a></li>
-            <li><a href="#">Vendas</a></li>
-          </ul>
+          <img id="logo" alt="logo" src="assets/images/logo.png">
+          <p>Seja qual for o seu propósito, nós queremos te ajudar a cumpri-lo.</p>
         </li>
-        <li><a href="#">A D&F Brokers</a></li>
-        <li><a href="#">Onde Estamos</a></li>
-        <li class="phone"><a href="https://wa.me/5562981952633" target="_blank">
-          <i class="fab fa-whatsapp"></i>
-          {{ phone }}
-        </a></li>
+        <li class="contact">
+          <h3>FALE CONOSCO</h3>
+          <br/>
+          <a href="https://wa.me/5562992537258" target="_blank"><i class="fab fa-whatsapp"></i> {{ phone }}</a>
+          <p>
+          <a href="mailto:contato@defbrokers.com.br"><i class="far fa-envelope"></i> {{ email }}</a>
+        </p>
+        </li>        
+        <li>
+          <h3>INSTITUCIONAL</h3>
+          <br/>
+          <a href="#sessao-quem-somos">A DEF Brokers</a>
+          <a href="#">Nossos valores</a>
+          <a href="#">Trabalhe Conosco</a>
+          <a href="#">Anuncie seu Imóvel</a>
+        </li>
+        <a href="https://api.whatsapp.com/send?phone=+5562981952633"
+          target="_blank"
+          style="position:fixed;bottom:20px;right:30px;">
+          <svg enable-background="new 0 0 512 512" width="50" height="50" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="M256.064,0h-0.128l0,0C114.784,0,0,114.816,0,256c0,56,18.048,107.904,48.736,150.048l-31.904,95.104  l98.4-31.456C155.712,496.512,204,512,256.064,512C397.216,512,512,397.152,512,256S397.216,0,256.064,0z" fill="#4CAF50"/><path d="m405.02 361.5c-6.176 17.44-30.688 31.904-50.24 36.128-13.376 2.848-30.848 5.12-89.664-19.264-75.232-31.168-123.68-107.62-127.46-112.58-3.616-4.96-30.4-40.48-30.4-77.216s18.656-54.624 26.176-62.304c6.176-6.304 16.384-9.184 26.176-9.184 3.168 0 6.016 0.16 8.576 0.288 7.52 0.32 11.296 0.768 16.256 12.64 6.176 14.88 21.216 51.616 23.008 55.392 1.824 3.776 3.648 8.896 1.088 13.856-2.4 5.12-4.512 7.392-8.288 11.744s-7.36 7.68-11.136 12.352c-3.456 4.064-7.36 8.416-3.008 15.936 4.352 7.36 19.392 31.904 41.536 51.616 28.576 25.44 51.744 33.568 60.032 37.024 6.176 2.56 13.536 1.952 18.048-2.848 5.728-6.176 12.8-16.416 20-26.496 5.12-7.232 11.584-8.128 18.368-5.568 6.912 2.4 43.488 20.48 51.008 24.224 7.52 3.776 12.48 5.568 14.304 8.736 1.792 3.168 1.792 18.048-4.384 35.52z" fill="#FAFAFA"/></svg>
+      </a>
       </ul>
-    </nav>
-  </header>
-
-  <div class="slider">
-    <ul class="slides"></ul>
-    <ol class="indicators" direction="next"></ol>
-    <div class="actions">
-      <i onclick="prevSlide(true)" class="fas fa-chevron-left prev disabled"></i>
-      <i onclick="nextSlide(true)" class="fas fa-chevron-right next"></i>
-    </div>
-  </div>
-
-  <main class="content">
-    <section id="sessao-pesquisa" class="push-sessoes">
-      <form id="form-search">
-        <h3>Encontre seu imóvel</h3>
-        <div class="row">
-          <div class="form-group">
-            <select name="type" aria-placeholder="Tipo">
-              <option value="aluguel">Aluguel</option>
-              <option value="venda">Venda</option>
-            </select>
+      <div class="bottom">
+            <span class="copyright"><i class="far fa-copyright"></i> DEF Brokers {{ year }} - Todos os direitos reservados</span>
+            <a href="https://gritealto.com/" target="_blank"> <span>Powered by GriteAlto</span></a>         
           </div>
-        </div>
-        <div class="row">
-          <div class="form-group">
-            <input type="number" name="startValue" placeholder="Valor inicial"/>
-          </div>
-          <div class="form-group">
-            <input type="number" name="endValue" placeholder="Valor Final"/>
-          </div>
-        </div>
-        <button type="submit">PESQUISAR</button>
-      </form>
-    </section>
-    <section id="sessao-quem-somos">
-      <div>
-        <img src="assets/images/def.jpg"/>
-      </div>
-      <div>
-        <h3>Quem Somos</h3>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-          when an unknown printer took a galley of type and scrambled it to make a type 
-          specimen book. It has survived not only five centuries, but also the leap into
-           electronic typesetting, remaining essentially unchanged.</p>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-          when an unknown printer took a galley of type and scrambled it to make a type 
-          specimen book. It has survived not only five centuries, but also the leap into
-          electronic typesetting, remaining essentially unchanged.</p>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-          when an unknown printer took a galley of type and scrambled it to make a type 
-          specimen book. It has survived not only five centuries, but also the leap into
-          electronic typesetting, remaining essentially unchanged.</p>
-      </div>
-    </section>
-  </main>
+     
+    </footer>
 
-  <footer>
-    <ul>
-      <li>
-        <img id="logo" alt="logo" src="assets/images/logo.png">
-        <p>Seja qual for o seu propósito, nós queremos te ajudar a cumpri-lo.</p>
-      </li>
-      <li class="contact">
-        <h3>FALE CONOSCO</h3>
-        <br/>
-        <a href="https://wa.me/5562992537258"><i class="fab fa-whatsapp"></i> {{ phone }}</a>
-        <a href="mailto:contato@defbrokers.com.br"><i class="far fa-envelope"></i> {{ email }}</a>
-      </li>
-      <li>
-        <h3>ONDE ESTAMOS</h3>
-        <br/>
-      </li>
-      <li>
-        <h3>INSTITUCIONAL</h3>
-        <br/>
-        <a href="#">A D&F Brokers</a>
-        <a href="#">Nossos valores</a>
-        <a href="#">Trabalhe Conosco</a>
-        <a href="#">Anuncie seu Imóvel</a>
-      </li>
-    </ul>
-    <span class="copyright"><i class="far fa-copyright"></i> D&F Brokers {{ year }} - Todos os direitos reservados</span>
-  </footer>
-
-  <!-- Scripts -->
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="js/utils/random.js"></script>
-  <script type="text/javascript" src="js/utils/query.js"></script>
-  <script type="text/javascript" src="config.js"></script>
-  <script type="text/javascript" src="js/menu.js"></script>
-  <script type="text/javascript" src="js/slider.js"></script>
-  <script type="text/javascript" src="js/search.js"></script>
-  <script type="text/javascript" src="js/sections.js"></script>
-  <script type="text/javascript" src="js/transitions.js"></script>
-  <script type="text/javascript" src="js/footer.js"></script>
-</body>
-</html>
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/utils/random.js"></script>
+    <script type="text/javascript" src="js/utils/query.js"></script>
+    <script type="text/javascript" src="config.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
+    <script type="text/javascript" src="js/slider.js"></script>
+    <script type="text/javascript" src="js/search.js"></script>
+    <script type="text/javascript" src="js/sections.js"></script>
+    <script type="text/javascript" src="js/transitions.js"></script>
+    <script type="text/javascript" src="js/footer.js"></script>
+  </body>
+  </html>
