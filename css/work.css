@@ -1,0 +1,84 @@
+#work {
+  min-height: calc(100vh - 80px);
+  padding: 30px 5% 15px 5%; 
+}
+
+#work h2 {
+  font-size: 25px;
+  text-align: center;
+  margin-top: 0;
+}
+
+#work {
+  flex-grow: 1;
+  box-sizing: border-box;
+}
+
+#work {
+  scroll-margin-top: 75px;
+  min-height: calc(100vh - 500px);
+  padding: 30px 5% 15px 5%;
+}
+
+#work:nth-child(odd) {
+  background-color:white ;
+}
+
+#form-join-work {
+  box-sizing: border-box;
+  padding: 25px;
+  max-width: 500px;
+  margin: 25px auto;
+  display: block;
+  background-color: rgb(243, 243, 243);
+}
+
+#form-join-work .form-group {
+  width: 100%;
+  margin: 10px 0;
+}
+
+#form-join-work .form-group > * {
+  min-width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  border: 1px solid rgb(194, 194, 194);
+  width: 100%;
+  padding: 5px;
+  font-size: 18px;
+  outline: none;
+}
+
+#form-join-work .form-group textarea {
+  min-height: 50px;
+  max-height: 300px;
+}
+
+#form-join-work button {
+  font-size: 18px;
+  width: 100%;
+  padding: 15px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  background-color: #0276cd !important;
+}
+
+#form-join-work button:hover {
+  background-color: #188ae0 !important;
+}
+
+@media only screen and (max-width: 600px) {
+  #form-join-work .form-group > *,
+  #form-join-work button {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #form-join-work .form-group > *,
+  #form-join-work button {
+    font-size: 14px;
+  }
+}

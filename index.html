@@ -38,12 +38,7 @@
           <li>
             <a href="#" class="toggle-dropdown">
               Imóveis
-             <!-- <i class="far fa-angle-down"></i>-->
             </a>
-            <!--<ul class="dropdown">
-              <li><a href="#">Alugueis</a></li>
-              <li><a href="#">Vendas</a></li>
-            </ul>-->
           </li>
           <li><a href="#sessao-quem-somos">A DEF Brokers</a></li>          
           <li class="phone"><a href="https://wa.me/5562981952633" target="_blank">
@@ -55,8 +50,31 @@
     </header>
 
     <div class="slider">
-      <ul class="slides"></ul>
-      <ol class="indicators" direction="next"></ol>
+      <ul class="slides">
+        <li class="slide active">
+          <div class="image" style="
+            background-image: url('assets/images/slider/slide1.webp');
+            background-position: center left;
+          "></div>
+        </li>
+        <li class="slide">
+          <div class="image" style="
+            background-image: url('assets/images/slider/slide2.webp');
+            background-position: center right;
+          "></div>
+        </li>
+        <li class="slide">
+          <div class="image" style="
+            background-image: url('assets/images/slider/slide3.webp');
+            background-position: center right;
+          "></div>
+        </li>
+      </ul>
+      <ol class="indicators" direction="next">
+        <li class="indicator active" onclick="goSlide(this)"></li>
+        <li class="indicator" onclick="goSlide(this)"></li>
+        <li class="indicator" onclick="goSlide(this)"></li>
+      </ol>
       <div class="actions">
         <i onclick="prevSlide(true)" class="fas fa-chevron-left prev disabled"></i>
         <i onclick="nextSlide(true)" class="fas fa-chevron-right next"></i>
@@ -123,8 +141,8 @@
           <h3>INSTITUCIONAL</h3>
           <br/>
           <a href="#sessao-quem-somos">A DEF Brokers</a>
-          <a href="#">Nossos valores</a>
-          <a href="#">Trabalhe Conosco</a>
+          <a href="#sessao-quem-somos">Nossos valores</a>
+          <a href="join-work.html">Trabalhe Conosco</a>
           <a href="#">Anuncie seu Imóvel</a>
         </li>
         <a href="https://api.whatsapp.com/send?phone=+5562981952633"
@@ -134,9 +152,9 @@
       </a>
       </ul>
       <div class="bottom">
-            <span class="copyright"><i class="far fa-copyright"></i> DEF Brokers {{ year }} - Todos os direitos reservados</span>
-            <a href="https://gritealto.com/" target="_blank"> <span>Powered by GriteAlto</span></a>         
-          </div>
+        <span class="copyright"><i class="far fa-copyright"></i> DEF Brokers {{ year }} - Todos os direitos reservados</span>
+        <a href="https://gritealto.com/" target="_blank"> <span>Powered by GriteAlto</span></a>         
+      </div>
      
     </footer>
 

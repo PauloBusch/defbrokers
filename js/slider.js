@@ -1,48 +1,13 @@
 $(function() {
-  const slides = site.slides.lista;
-  initSlides(slides);
-  initIndicators(slides);
   configureAnimation();
 });
 
-function initSlides(slides) {
-  const slidesRendered = slides.map(
-    s => renderSlide(s, slides.indexOf(s) === 0)
-  );
-  const $slides = $('.slider .slides');
-  const width = `${(slides.length * 100)}%`;
-  $slides.html(slidesRendered.join(''));
-  $slides.css('width', width);
-}
-
-function initIndicators(slides) {
-  const indicatorsRendered = slides.map(
-    s => renderIndicator(slides.indexOf(s) === 0)
-  );
-  $('.slider .indicators').html(indicatorsRendered.join(''));
-}
-
-function renderSlide(slide, active) {
-  return `
-    <li class="slide ${(active ? 'active' : '')}">
-      <img src="assets/images/slider/${slide.imagem}"/>
-      
-    </li>`; 
-}
-
-function renderIndicator(active) {
-  return `
-    <li 
-      class="indicator ${(active ? 'active' : '')}"
-      onclick="goSlide(this)">
-    </li>`; 
-}
-
+const duration = 10000;
 var animationId;
 
 function configureAnimation() {
   if (animationId) clearInterval(animationId);
-  animationId = setInterval(updateAnimation, site.slides.duracao);
+  animationId = setInterval(updateAnimation, duration);
 }
 
 function updateAnimation() {
